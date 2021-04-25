@@ -1,0 +1,54 @@
+1.If you wanna try the "install" method:
+-Run with Administrator permission the FtpEditorInstallAdmin.bat file.
+-Run the FtpEditorInstall file.
+-The latest ncftp required --> (https://www.ncftp.com/)
+#<-The values meaning in the MainVars.ps1->#
+##FTP login datas
+$ftp_server = "192.168.1.1" --> The FTP server ip or domain address
+$ftp_username = "admin" --> The username to the working directory
+$ftp_password = "admin" --> The user password
+$ftp_json_folder_local_download = "Json/" --> This is the local Json folder where we wann download the files
+$ftp_json_folder_download = "/Json/*" --> This is the Json files folder on the FTP server 
+$ftp_json_folder_upload = "Json/" --> This is the folder where we wanna upload the json files to the FTP server
+$ftp_json_folder_local_upload = "Json/*" --> This is the local folder where we wanna upload the files to the FTP server
+#<-This is the location the folders on the FTP server>#
+$ftp_folder1_upload = "/Folder1/" 
+$ftp_folder2_upload = "/Folder2/"
+$ftp_folder3_upload = "/Folder3/"
+$ftp_folder4_upload = "/Folder4/"
+$ftp_folder5_upload = "/Folder5/"
+##Upload folders things from local to the ftp
+$local_folder1 = "Folder1\*"
+$local_folder2 = "Folder2\*"
+$local_folder3 = "Folder3\*"
+$local_folder4 = "Folder4\*"
+$local_folder5 = "Folder5\*"
+##Local folder locations to the open
+$local_folder1_location = "Folder1\"
+$local_folder2_location = "Folder2\"
+$local_folder3_location = "Folder3\"
+$local_folder4_location = "Folder4\"
+$local_folder5_location = "Folder5\"
+##Json files location
+$json_file1 = "Json/filename1.json"
+$json_file2 = "Json/filename2.json"
+$json_file3 = "Json/filename3.json"
+$json_file4 = "Json/filename4.json"
+$json_file5 = "Json/filename5.json"
+$json_file6 = "Json/filename6.json"
+$json_file7 = "Json/filename7.json"
+$json_file8 = "Json/filename8.json"
+$json_file9 = "Json/filename9.json"
+##Json files name(just name without extension to the condition)
+$json_name1 = "filename1"
+$json_name2 = "filename2"
+$json_name3 = "filename3"
+$json_name4 = "filename4"
+$json_name5 = "filename5"
+$json_name6 = "filename6"
+$json_name7 = "filename7"
+$json_name8 = "filename8"
+$json_name9 = "filename9"
+##Picture_temp_file and folder location to the rename
+$pictures_folder ="Folder1/"
+$picture_temp_file = "Tmp/tmp.txt"
